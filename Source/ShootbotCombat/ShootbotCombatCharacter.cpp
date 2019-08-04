@@ -18,6 +18,8 @@ AShootbotCombatCharacter::AShootbotCombatCharacter()
 	bUseControllerRotationRoll = false;
 
 	// Create a camera boom attached to the root (capsule)
+	// removed, added via BP in BP_HeroPerson
+	/*
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->bAbsoluteRotation = true; // Rotation of the character should not affect rotation of boom
@@ -30,6 +32,7 @@ AShootbotCombatCharacter::AShootbotCombatCharacter()
 	SideViewCameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("SideViewCamera"));
 	SideViewCameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	SideViewCameraComponent->bUsePawnControlRotation = false; // We don't want the controller rotating the camera
+	*/
 
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Face in the direction we are moving..
@@ -51,12 +54,14 @@ AShootbotCombatCharacter::AShootbotCombatCharacter()
 void AShootbotCombatCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	// set up gameplay key bindings
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	// bindings handles in BP
+/*	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AShootbotCombatCharacter::MoveRight);
 
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &AShootbotCombatCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &AShootbotCombatCharacter::TouchStopped);
+	*/
 }
 
 void AShootbotCombatCharacter::MoveRight(float Value)
