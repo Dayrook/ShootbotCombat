@@ -4,20 +4,25 @@ Update 2019-08-05
 
 ## Person
 
-x Person stays in cockpit while piloting
+To enter mech, Check for unoccupied mech in range and select that
+health and death
+Respawns in nearest mechspawner upon death
 
-x Moves outside cockpit when exiting
 
 
 
 ## Mech
 
-Moves to unoccupied pose when unoccupied
+
 
 bullets die on impact
+Health and death
+Ejects pilot before death
 
 
+## MechSpawner
 
+Spawns mech after delay, if empty
 
 
 
