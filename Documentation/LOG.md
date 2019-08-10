@@ -2,6 +2,20 @@
 
 jetpack replication was causing a lot of rubber banding. possibly to do with impulse applied in tiny bursts on event tick -- seems too reliant on tiny frame times between impulse. I moved impulse to its own function.
 
+---------
+
+
+
+Rubberbanding Solved. Needed separate replication rules for Client / Server
+
+https://answers.unrealengine.com/questions/558697/view.html
+
+
+
+--
+
+
+
 
 
 
