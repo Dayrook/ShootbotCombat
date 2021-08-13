@@ -1,10 +1,13 @@
 
-
-![Shootbot_Combat_HeaderImage](Documentation/Images/194_Header.jpg)
+[![Gameplay Demo Video](Documentation/Images/ShootbotCombat_Youtube.jpg)](https://www.youtube.com/watch?v=eUNrPGs5y14 "Watch on Youtube")
 
 # ShootbotCombat
 
-UE4 Dev Ground for 2.5D Robot Combat Action Game
+Inspired by Metal Warriors (1995, SNES).
+
+The missile projectiles are by [Jason Frailey](http://jasonfrailey.com) as he was learning zbrush.
+
+Developed as a hobby project in Unreal Engine 4 in August 2019.
 
 # Dev Notes
 
